@@ -15,23 +15,23 @@ public class FarmerPack extends AbstractCardPack {
     public static final String AUTHOR = UI_STRINGS.TEXT[2];
 
     public FarmerPack() {
-        super(ID, NAME, DESC, AUTHOR, new PackSummary(3, 2, 3, 2, 1));
+        super(ID, NAME, DESC, AUTHOR, new PackSummary(1,1,1,1,1));
     }
 
     @Override
     public ArrayList<String> getCards() {
         ArrayList<String> cards = new ArrayList<>();
-        cards.add(HarvestCarrots.ID);
-        cards.add(HarvestBeans.ID);
-        cards.add(HarvestPotatoes.ID);
-        cards.add(HarvestRadishes.ID);
+        cards.add(Hydroponics.ID);
+        cards.add(HarvestCrops.ID);
+        cards.add(Mechanize.ID);
+        cards.add(SeedVault.ID);
         cards.add(Fertilizer.ID);
-        cards.add(SoilResiliency.ID);
+        cards.add(InSeason.ID);
         cards.add(SowTheSeeds.ID);
         cards.add(TillTheEarth.ID);
         cards.add(OutToMarket.ID);
         cards.add(SupplyChain.ID);
-        cards.add(PestControl.ID);
+        cards.add(GeneticallyModified.ID);
         return cards;
     }
 }
