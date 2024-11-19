@@ -6,6 +6,11 @@
       "DJM"
     ]
   },
+  "${ModID}:GeneticallyModified": {
+    "TEXT": [
+      "Choose a power. It costs 0."
+    ]
+  },
   "${ModID}:FarmerPackHat": {
     "TEXT": [
       "Simple hat made of straw. Keeps out sun and rain.",
