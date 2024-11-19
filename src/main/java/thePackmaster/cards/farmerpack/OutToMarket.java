@@ -12,15 +12,17 @@ public class OutToMarket extends AbstractFarmerCard {
     public final static String ID = makeID("OutToMarket");
 
     public OutToMarket() {
-        super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 1;
+        super(ID, 2, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 2;
+        baseSecondMagic = secondMagic = 2;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        atb(new ApplyPowerAction(p, p,new OutToMarketPower(p, magicNumber)));
+        atb(new ApplyPowerAction(p, p,new OutToMarketPower(p, magicNumber, secondMagic)));
     }
 
     public void upp() {
         upgradeMagicNumber(1);
+        upgradeSecondMagic(1);
     }
 }
