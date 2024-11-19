@@ -3,14 +3,39 @@
     "NAME": "Out To Market",
     "DESCRIPTIONS": [
       "Deal #b",
-      " damage to ALL enemies whenever you play a card with a different type than the last. Last Played:", "Attack", "Skill", "Power", "Status", "Curse"
+      " damage to ALL enemies and gain #b",
+      " Block the first time you play a card type each turn. You have played: ", "#yAttack", "#ySkill", "#yPower", "#yStatus", "#yCurse"
     ]
   },
   "${ModID}:SupplyChainPower": {
     "NAME": "Supply Chain",
     "DESCRIPTIONS": [
       "At the start of your turn, add #b",
-      " Fertilizer", "s", " to your hand."
+      " Fertilizer to your hand.",
+      "  Fertilizers to hand."
+    ]
+  },
+  "${ModID}:InSeasonPower": {
+    "NAME": "Seasonal Boom",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yStrength whenever you play a non-Attack. Gain #b",
+      " #yPlated #yArmor whenever you play an Attack."
+    ]
+  },
+  "${ModID}:TillPower": {
+    "NAME": "Prepared Soil",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, add #b",
+      " #yFertilizer to hand.",
+      " #yFertilizers to hand."
+    ]
+  },
+  "${ModID}:SeedVaultPower": {
+    "NAME": "Seed Stores",
+    "DESCRIPTIONS": [
+      "Next turn, gain a copy of the next Attack or Skill you play this turn. It costs 0 and exhausts. Currently gives: ",
+      "Next turn, gain a copy of the next #b", " Attacks or Skills you play this turn. They cost 0 and exhaust. Currently gives: "
     ]
   }
 }
